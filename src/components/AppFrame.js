@@ -6,6 +6,10 @@ import PropTypes from 'prop-types';
 import { createStyleSheet } from 'jss-theme-reactor';
 import customPropTypes from 'material-ui/utils/customPropTypes';
 
+import WithREM from '../utils/WithREM';
+
+const withREM = new WithREM().init();
+
 const styleSheet = createStyleSheet('AppFrame', (theme) => {
   return {
     '@global': {
